@@ -6,4 +6,5 @@ app.get("/",function (req, res) {
   res.write('Welcome Gspann Technologies')
   res.end();
 });
-app.listen(3000); 
+const PORT = process.env.PORT || 8080;
+app.listen(PORT); 
