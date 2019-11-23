@@ -1,6 +1,9 @@
-var http = require('http');
+var express = require('express');
 
-http.createServer(function (req, res) {
-  res.write('Welcome Gspann Technologies');
-  res.end(); 
-}).listen(3000); 
+var app = express()
+
+app.get("/",function (req, res) {
+  res.write('Welcome Gspann Technologies')
+  res.end();
+});
+app.listen(3000); 
